@@ -18,3 +18,11 @@
 - SW1(config)# hostname SW1 !Задаем имя коммуатора. Хотя в нашем случае оно уже задано. Я просто для примера.
 - SW1(config)#ip domain-name iosif.local !задаем доменное имя
 - SW1(config)# crypto key generate rsa general-keys modulus 2048 !Генерируем криптографический ключ для аутентификации
+- SW1(config)# username admin privilege 15 secret cisco !Создаем локального пользователя с максимальным (15) уровнем прав
+- SW1(config)# line vty 0 15 !Переходим к настройке терминальный линий VTY
+- SW1(config-line)# transport input ssh !Переклачаем на доступ только по SSH (до этого было только по telnet)
+- SW1(config-line)# login local !Включаем лкоальную аутентификацию
+- SW1(config-line)# exit
+- SW1(config)# ip ssh version 2 !Включаем SSH v2 (более безоопасный)
+- SW1(config)# ip ssh time-out 60 !Настраиваем таймаут неактивности (60 секунд)
+- SW1(config)# ip ssh authentication-retries 3 !Настраиваем максимальное количество попыток ввода пароля
