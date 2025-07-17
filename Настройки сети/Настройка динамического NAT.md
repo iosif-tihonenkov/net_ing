@@ -1,6 +1,6 @@
 # Настройка динамического NAT
 ## Изначальная топология
-<img width="848" height="451" alt="image" src="https://github.com/user-attachments/assets/32b2ea33-504e-4384-aaa8-1ee7fb92805a" />
+<img width="1382" height="664" alt="image" src="https://github.com/user-attachments/assets/4e1035de-9496-4d24-90f9-eef364cdf124" />
 
 Вся предварительная базовая настройка проведена. Мы просто продолжаем работу над прошлой лабой, где был настроен статический NAT - [gitСсылка](<img width="848" height="451" alt="image" src="https://github.com/user-attachments/assets/1a875d05-2dc0-47a7-8697-0619e23b75cb" />
 )
