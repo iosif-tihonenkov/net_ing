@@ -39,12 +39,15 @@ EBGP — BGP МЕЖДУ AS
 1. Изначальное состояние BGP-соседства — IDLE (ничего не происходит). В этом состоянии BGP находится в случае, если нет маршрута к BGP-пиру.
 
 Посмотреть состояние можно по команде `show ip bgp neighbor`.
+<img width="846" height="775" alt="image" src="https://github.com/user-attachments/assets/634dcd82-5305-46cb-8b03-cbad3efbbf2c" />
+
 
 2. Для надежности BGP использует TCP (мы как то обсуждали, что это хоть не самый быстрый, но надежный протокол. Его брат — UDP (по ходу приемный)).
 
-Посмотреть состояние можно по команде `show ip bgp neighbor`.
 
-BGP-маршрутизатор слушае и посылает пакеты на 179 TCP порт.
+BGP-маршрутизатор слушаеn и посылает пакеты на 179 TCP порт.
+<img width="669" height="129" alt="image" src="https://github.com/user-attachments/assets/5928d0cf-9149-4ee8-8d9c-ab03cf54535c" />
+
 
 Когда слушает — состояние CONNECT. 
 Когда отправил и ждет ответ от соседа — состояние ACTIVE.
@@ -54,3 +57,6 @@ R2  возвращает R1 TCP ACK (ответ на SYN R1) и посылает
 R1 возвращает R2 TCP ACK (о том, что получил SYN).
 
 Итого — состояние установлено. 
+
+<img width="406" height="26" alt="image" src="https://github.com/user-attachments/assets/b1598c37-33d1-49e0-ad7b-ef9a62a607eb" />
+
