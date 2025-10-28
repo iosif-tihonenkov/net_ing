@@ -14,7 +14,9 @@
 
 Коллеги, начинаем с основного этапа. Нам начала нам потребуется операционная система, а именно Ubuntu 20.04. Это если мы будем устанавливать PnetLab версии 5. 4 версия работает под 18.какой то.
 
-Я скачал версию 20.04.4 и установил на VirtualBox. Ресурсы дал следующие:
+<img width="336" height="79" alt="{C3C86E9E-B6D4-431E-87F8-7453FD051A78}" src="https://github.com/user-attachments/assets/fd07fa69-0ee8-4685-abac-089265eb906e" />
+
+Я скачал версию 20.04.06 и установил на VirtualBox. Ресурсы дал следующие:
 1. 8 Гб - RAM
 2. 100 Гб - SSD
 3. 8 ядра - CPU
@@ -29,4 +31,9 @@
 
 Прежде всего воспользуемся основной командой, которую мы посмотрели в [репозитории проекта](https://github.com/pnetlabrepo/ishare2):
 
-```wget -O /usr/sbin/ishare2 https://raw.githubusercontent.com/pnetlabrepo/ishare2/main/ishare2 > /dev/null 2>&1 && chmod +x /usr/sbin/ishare2 && ishare2```
+```sudo wget -O /usr/sbin/ishare2 https://github.com/ishare2-org/ishare2-cli/raw/main/ishare2```
+
+Вот что получилось:
+<img width="1485" height="283" alt="{FF262051-A221-4AAC-BAAE-29CCB9FBA67D}" src="https://github.com/user-attachments/assets/b9d9281e-4dce-45c6-8566-3b76cb3fabed" />
+
+Далее устанавливаем права выполнения - ```sudo chmod +x /usr/sbin/ishare2```
