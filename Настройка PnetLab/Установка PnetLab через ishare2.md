@@ -64,23 +64,7 @@
 После этого мы идем скачиваем образ и можем использовать его уже в нашем лаборатории.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## P.S.:Состояние загрузки ресурсов в разных ситуациях
 
 ОС без PnetLab, монитор ресурсов:
 <img width="1916" height="848" alt="{E4200813-5BCD-4601-8857-B31F5584F2EF}" src="https://github.com/user-attachments/assets/b3bc1018-8033-48ec-b931-362ec2d0f186" />
@@ -88,7 +72,10 @@
 ОС с PnetLab, монитор ресурсов:
 <img width="1918" height="826" alt="{F19D2D1F-770E-4B70-BE50-DE5793CE1AED}" src="https://github.com/user-attachments/assets/f97e9bed-444a-42cb-adc4-ba49e91b5140" />
 
-ОС с PnetLab и с запущенными двумя коммутаторами, монитор ресурсов:
+ОС с PnetLab и с запущенными двумя коммутаторами (Cisco C1710), монитор ресурсов:
+<img width="1919" height="824" alt="{01BA710F-8ADA-4FD4-A1E7-7F50626DF9AB}" src="https://github.com/user-attachments/assets/8bf48b5b-f7b5-4858-802e-d038f14d7d14" />
+
+<img width="538" height="207" alt="{217CB4C9-0442-40E6-A866-222B4E4B765C}" src="https://github.com/user-attachments/assets/63ec3237-5218-4c1e-8f5f-904e9dc7d163" />
 
 
 
