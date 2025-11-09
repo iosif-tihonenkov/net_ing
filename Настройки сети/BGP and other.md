@@ -51,6 +51,28 @@ AS:
 Чуть более наглядно - можно посмотреть на скриншоте:
 <img width="864" height="307" alt="{C4F3D9B2-51F8-4DC5-8B3F-A8CDBBA0D7FD}" src="https://github.com/user-attachments/assets/11c6d881-c640-4187-af2f-41e7371ebeca" />
 
+**Настройка R1:**
+
+R1(config)#interface e1/0
+R1(config-if)#ip address 192.168.12.1 255.255.255.252
+R1(config-if)#no shutdown
+
+**Настройка R2:**
+
+R2(config)#interface e1/0
+R2(config-if)#ip address 192.168.12.2 255.255.255.252
+R2(config-if)#no shutdown 
+
+R2(config)#interface e1/1
+R2(config-if)#ip address 192.168.23.1 255.255.255.252
+R2(config-if)#no shutdown 
+
+**Настройка R3:**
+
+R3(config)#interface e1/0
+R3(config-if)#ip address 192.168.23.2 255.255.255.252
+R3(config-if)#no shutdown
+
 
 Заметка будет пополняться. Если не забью болт.... Последней пополнение - 09.11.2025.
 
