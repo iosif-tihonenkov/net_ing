@@ -79,7 +79,7 @@ R3(config-if)#no shutdown !Включаем (подымаем) интерфей�
 
 ## Настраиваем сам BGP:
 
-**BGP на R1:**
+**Настройка на R1:**
 
 ```
 R1(config)#router bgp 64512 !Включаем BGP и указываем AS, за которую у нас отвечает этот маршрутизатор
@@ -87,7 +87,24 @@ R1(config-router)#bgp router-id 1.1.1.1 # !Указваем router ID (Не то
 R1(config-router)#neighbor 192.168.12.2 remote-as 64513 !Указываем сеть соседа (это у нас R2) и его AS
 R1(config-router)#neighbor 192.168.12.2 description To_R2 !На всякий случай, от греха подальше - пишем описание. Написал я "К R2". Удобно, че.)
 ```
+**Настройка на R2:**
+```
+R2(config)#router bgp 64513 
+R2(config-router)#bgp router-id 2.2.2.2
 
+R2(config-router)#neighbor 192.168.12.1 remote-as 64512 !Настраиваем связь с R1
+R2(config-router)#neighbor 192.168.12.1 description To_R1
+
+R2(config-router)#neighbor 192.168.23.2 remote-as 64514 !Настраиваем связь с R3
+R2(config-router)#neighbor 192.168.23.2 description To_R3
+```
+**Настройка на R3:**
+```
+R3(config)#router bgp 64514
+R3(config-router)#bgp router-id 3.3.3.3
+R3(config-router)#neighbor 192.168.23.1 remote-as 64513 !Настраиваем связь с R2
+R3(config-router)#neighbor 192.168.23.1 description To_R2
+```
 
 
 
